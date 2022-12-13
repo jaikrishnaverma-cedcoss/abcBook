@@ -189,6 +189,11 @@ top: 0;
     background-image: url('https://preview.colorlib.com/theme/abcbook/assets/img/gallery/section-bg1.jpg.webp');
 }
 
+.carousel-indicators [data-bs-target] {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
 .container--footer,footer{
     background-color: #fef4f4 ;
 }
