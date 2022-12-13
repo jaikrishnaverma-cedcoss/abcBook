@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- JavaScript Bundle with Popper -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- Navbar  -->
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="book.png" style="width: 50px;" /><span
+          class="navbar-brand__boldspan">&nbsp;ABC</span> Book</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+
+
+        <div class="collapse__searchbox">
+          <input class="form-control me-2 collapse__searchinput" name="collapse__searchinput" type="search"
+            placeholder="Search" aria-label="Search">
+          <i class="bi bi-search searchicon"></i>
+        </div>
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 600px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Link
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Link</a>
+          </li>
+        </ul>
+
+        <i class="bi bi-cart carticon">
+          <div class="cartitems">0</div>
+        </i>
+        <button class="btn btnred btn-danger" type="submit">Sign in</button>
+
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- lets done the body conatiner -->
+  <div class="container-fluid container--second">
+
+    <!-- important navigations -->
+    <ul class="nav justify-content-center navlinks d-none d-md-flex d-sm-none d-sx-none">
+      <li class="nav-item">
+        <a class="nav-link fs-6" href="#">Home</a>
+      </li>
+      <li class="nav-item fs-6">
+        <a class="nav-link" href="#">Categories</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Pages</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Contact</a>
+      </li>
+    </ul>
+
+    <!-- Main Carousal -->
+    <div class="jumbotron jumbotron--first">
+      <button class="btn btn-light scifi">Science Fiction</button>
+      <h1 class="display-4">The History</h1>
+      <h1 class="display-4">of Phipino</h1>
+      <p class="lead">
+        <a class="btn btnred btn-danger storebtn" href="#" role="button">Browse Store</a>
+      </p>
+    </div>
+
+    <!-- first products Slider  -->
+    <div class="jumbotron jumbotron--second">
+      <h2 class="b-font">Best Selling Books Ever</h2>
+      <div id="carouselExampleControls" class="carousel slide w100" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <!-- Card row 1 -->
+            <div class="d-flex flex-wrap justify-content-between">
+
+              <div class="card col-12 col-sm-6 col-md-2 mt-2" style="">
+                <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling1.jpg.webp"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4>Moon Dance</h4>
+                  <p class="card-text">J. Rain</p>
+                  <div class="d-flex">
+                    <div class="col-8">
+                      <p>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                      </p>
+                      <p class="review">(<span>120</span>&nbsp;Review)</p>
+                    </div>
+                    <div class="col-4">
+                      <h3 style="color:red">$40</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card col-12 col-sm-6 col-md-2 mt-2" style="">
+                <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling2.jpg.webp"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4>Moon Dance</h4>
+                  <p class="card-text">J. Rain</p>
+                  <div class="d-flex">
+                    <div class="col-8">
+                      <p>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                      </p>
+                      <p class="review">(<span>120</span>&nbsp;Review)</p>
+                    </div>
+                    <div class="col-4">
+                      <h3 style="color:red">$40</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card col-12 col-sm-6 col-md-2 mt-2" style="">
+                <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling3.jpg.webp"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4>Moon Dance</h4>
+                  <p class="card-text">J. Rain</p>
+                  <div class="d-flex">
+                    <div class="col-8">
+                      <p>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                      </p>
+                      <p class="review">(<span>120</span>&nbsp;Review)</p>
+                    </div>
+                    <div class="col-4">
+                      <h3 style="color:red">$40</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card col-12 col-sm-6 col-md-2 mt-2" style="">
+                <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling4.jpg.webp"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4>Moon Dance</h4>
+                  <p class="card-text">J. Rain</p>
+                  <div class="d-flex">
+                    <div class="col-8">
+                      <p>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                      </p>
+                      <p class="review">(<span>120</span>&nbsp;Review)</p>
+                    </div>
+                    <div class="col-4">
+                      <h3 style="color:red">$40</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card col-12 col-sm-6 col-md-2 mt-2" style="">
+                <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling5.jpg.webp"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4>Moon Dance</h4>
+                  <p class="card-text">J. Rain</p>
+                  <div class="d-flex">
+                    <div class="col-8">
+                      <p>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                      </p>
+                      <p class="review">(<span>120</span>&nbsp;Review)</p>
+                    </div>
+                    <div class="col-4">
+                      <h3 style="color:red">$40</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!-- Card row 2 -->
+            <div class="d-flex flex-wrap justify-content-between">
+              <div class="card col-12 col-sm-6 col-md-2 mt-2" style="">
+                <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling1.jpg.webp"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4>Moon Dance</h4>
+                  <p class="card-text">J. Rain</p>
+                  <div class="d-flex">
+                    <div class="col-8">
+                      <p>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                      </p>
+                      <p class="review">(<span>120</span>&nbsp;Review)</p>
+                    </div>
+                    <div class="col-4">
+                      <h3 style="color:red">$40</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card col-12 col-sm-6 col-md-2 mt-2" style="">
+                <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling2.jpg.webp"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4>Moon Dance</h4>
+                  <p class="card-text">J. Rain</p>
+                  <div class="d-flex">
+                    <div class="col-8">
+                      <p>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                      </p>
+                      <p class="review">(<span>120</span>&nbsp;Review)</p>
+                    </div>
+                    <div class="col-4">
+                      <h3 style="color:red">$40</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card col-12 col-sm-6 col-md-2 mt-2" style="">
+                <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling3.jpg.webp"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4>Moon Dance</h4>
+                  <p class="card-text">J. Rain</p>
+                  <div class="d-flex">
+                    <div class="col-8">
+                      <p>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                      </p>
+                      <p class="review">(<span>120</span>&nbsp;Review)</p>
+                    </div>
+                    <div class="col-4">
+                      <h3 style="color:red">$40</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card col-12 col-sm-6 col-md-2 mt-2" style="">
+                <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling4.jpg.webp"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4>Moon Dance</h4>
+                  <p class="card-text">J. Rain</p>
+                  <div class="d-flex">
+                    <div class="col-8">
+                      <p>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                      </p>
+                      <p class="review">(<span>120</span>&nbsp;Review)</p>
+                    </div>
+                    <div class="col-4">
+                      <h3 style="color:red">$40</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card col-12 col-sm-6 col-md-2 mt-2" style="">
+                <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling5.jpg.webp"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4>Moon Dance</h4>
+                  <p class="card-text">J. Rain</p>
+                  <div class="d-flex">
+                    <div class="col-8">
+                      <p>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                      </p>
+                      <p class="review">(<span>120</span>&nbsp;Review)</p>
+                    </div>
+                    <div class="col-4">
+                      <h3 style="color:red">$40</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev cards-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next cards-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add of Slider with poster -->
+  <div class="container-fluid container--third ">
+    <div class="d-flex flex-wrap ">
+      <div class="col-12 col-md-9 col-lg-9 ">
+        <div class="d-flex justify-content-between col--box1">
+          <h2 class="b-font">Featured This Week</h2>
+          <h4 class="b-font">View All</h4>
+        </div>
+        <div id="carouselExampleInterval" class="carousel slide" style="width:98%;" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active pb-3" data-bs-interval="10000" style="background-color: red;">
+              <div class="d-flex flex-wrap py-md-4 px-md-5 justify-content-center">
+                <img classname="col-4 bookimg"
+                  src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best-books1.jpg.webp" alt="image Not Available">
+                <div
+                  class="col-12 col-sm-5 col-md-5 col-lg-5  col--details d-flex flex-column justify-content-center ps-4">
+                  <h2 class="mt-3">The Range of Dragons</h2>
+                  <p>By Even Winter</p>
+
+                  <p class="mt-3 price">$50.00</p>
+                  <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <span>(120 Review)</span>
+                  </p>
+                  <button class="btn btn-outline-light rounded-pill p-3 col-5" type="submit">View Details</button>
+                </div>
+              </div>
+
+            </div>
+            <!-- <div class="carousel-item" data-bs-interval="10000" style="background-color: red">
+              <div class="d-flex flex-wrap py-4 px-5 flex">
+                <img classname="col-4"
+                  src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best-books1.jpg.webp" alt="image Not Available">
+                <div class="col-5 col col--details d-flex flex-column justify-content-center ms-5">
+                  <h2>The Range of Dragons</h2>
+                  <p>By Even Winter</p>
+
+                  <p class="mt-5 price">$50.00</p>
+                  <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <span>(120 Review)</span>
+                  </p>
+                  <button class="btn btnred btn-danger col-5 vdetails" type="submit">View Details</button>
+                </div>
+              </div>
+            </div> -->
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <img class="col-12 col-md-3 col-lg-3 banner "
+        src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/ad.jpg.webp" alt="image Not Available">
+    </div>
+  </div>
+
+  <!-- Second product sider with categories -->
+  <div class="container-fluid container-fourth">
+    <div class="d-flex flex-wrap flex-justify-content-between">
+      <h3 class="col-12 col-sm-6 col-md-6 col-lg-6 b-font">Latest Published items</h3>
+      <ul
+        class="nav col-12 col-sm-6 col-md-6 col-lg-6 nav-pills justify-content-evenly justify-content-md-end justify-content-lg-end mb-3"
+        id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class=" btn btn-outline-danger rounded-pill py-2 px-3 active m-1" id="pills-all-tab"
+            data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all"
+            aria-selected="true">All</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class=" btn btn-outline-danger rounded-pill py-2 px-3 m-1" id="pills-horror-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-horror" type="button" role="tab" aria-controls="pills-horror"
+            aria-selected="false">Horror</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class=" btn btn-outline-danger rounded-pill py-2 px-3 m-1" id="pills-thriller-tab"
+            data-bs-toggle="pill" data-bs-target="#pills-thriller" type="button" role="tab"
+            aria-controls="pills-thriller" aria-selected="false">Thriller</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class=" btn btn-outline-danger rounded-pill py-2 px-3 m-1" id="pills-scienceFiction-tab"
+            data-bs-toggle="pill" data-bs-target="#pills-scienceFiction" type="button" role="tab"
+            aria-controls="pills-scienceFiction" aria-selected="false">Science Fiction</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class=" btn btn-outline-danger rounded-pill py-2 px-3 m-1" id="pills-history-tab"
+            data-bs-toggle="pill" data-bs-target="#pills-history" type="button" role="tab" aria-controls="pills-history"
+            aria-selected="false">History</button>
+        </li>
+
+      </ul>
+    </div>
+
+    <!-- tab content related to categories -->
+    <div class="tab-content" id="pills-tabContent">
+
+      <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
+        <div class="d-flex flex-wrap justify-content-between">
+          <div class="card col-12 col-sm-6 col-md-1 mt-2" style="">
+            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling1.jpg.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4>All</h4>
+              <p class="card-text">J. Rain</p>
+              <div class="d-flex">
+                <div class="col-8">
+                  <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </p>
+                  <p class="review">(<span>120</span>&nbsp;Review)</p>
+                </div>
+                <div class="col-4">
+                  <h3 class="h3price" style="color:red">$40</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-12 col-sm-6 col-md-1 mt-2" style="">
+            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling1.jpg.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4>All</h4>
+              <p class="card-text">J. Rain</p>
+              <div class="d-flex">
+                <div class="col-8">
+                  <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </p>
+                  <p class="review">(<span>120</span>&nbsp;Review)</p>
+                </div>
+                <div class="col-4">
+                  <h3 class="h3price" style="color:red">$40</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-12 col-sm-6 col-md-1 mt-2" style="">
+            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling2.jpg.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4>All</h4>
+              <p class="card-text">J. Rain</p>
+              <div class="d-flex">
+                <div class="col-8">
+                  <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </p>
+                  <p class="review">(<span>120</span>&nbsp;Review)</p>
+                </div>
+                <div class="col-4">
+                  <h3 class="h3price" style="color:red">$40</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-12 col-sm-6 col-md-1 mt-2" style="">
+            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling3.jpg.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4>All</h4>
+              <p class="card-text">J. Rain</p>
+              <div class="d-flex">
+                <div class="col-8">
+                  <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </p>
+                  <p class="review">(<span>120</span>&nbsp;Review)</p>
+                </div>
+                <div class="col-4">
+                  <h3 class="h3price" style="color:red">$40</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-12 col-sm-6 col-md-1 mt-2" style="">
+            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling4.jpg.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4>All</h4>
+              <p class="card-text">J. Rain</p>
+              <div class="d-flex">
+                <div class="col-8">
+                  <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </p>
+                  <p class="review">(<span>120</span>&nbsp;Review)</p>
+                </div>
+                <div class="col-4">
+                  <h3 class="h3price" style="color:red">$40</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-12 col-sm-6 col-md-1 mt-2" style="">
+            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling5.jpg.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4>All</h4>
+              <p class="card-text">J. Rain</p>
+              <div class="d-flex">
+                <div class="col-8">
+                  <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </p>
+                  <p class="review">(<span>120</span>&nbsp;Review)</p>
+                </div>
+                <div class="col-4">
+                  <h3 class="h3price" style="color:red">$40</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="pills-horror" role="tabpanel" aria-labelledby="pills-horror-tab">
+        <div class="d-flex flex-wrap justify-content-between">
+          <div class="card col-12 col-sm-6 col-md-1 mt-2" style="">
+            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling1.jpg.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4>Horror</h4>
+              <p class="card-text">J. Rain</p>
+              <div class="d-flex">
+                <div class="col-8">
+                  <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </p>
+                  <p class="review">(<span>120</span>&nbsp;Review)</p>
+                </div>
+                <div class="col-4">
+                  <h3 class="h3price" style="color:red">$40</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-12 col-sm-6 col-md-1 mt-2" style="">
+            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling2.jpg.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4>Horror</h4>
+              <p class="card-text">J. Rain</p>
+              <div class="d-flex">
+                <div class="col-8">
+                  <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </p>
+                  <p class="review">(<span>120</span>&nbsp;Review)</p>
+                </div>
+                <div class="col-4">
+                  <h3 class="h3price" style="color:red">$40</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-12 col-sm-6 col-md-1 mt-2" style="">
+            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling3.jpg.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4>Horror</h4>
+              <p class="card-text">J. Rain</p>
+              <div class="d-flex">
+                <div class="col-8">
+                  <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </p>
+                  <p class="review">(<span>120</span>&nbsp;Review)</p>
+                </div>
+                <div class="col-4">
+                  <h3 class="h3price" style="color:red">$40</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-12 col-sm-6 col-md-1 mt-2" style="">
+            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling1.jpg.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4>Horror</h4>
+              <p class="card-text">J. Rain</p>
+              <div class="d-flex">
+                <div class="col-8">
+                  <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </p>
+                  <p class="review">(<span>120</span>&nbsp;Review)</p>
+                </div>
+                <div class="col-4">
+                  <h3 class="h3price" style="color:red">$40</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-12 col-sm-6 col-md-1 mt-2" style="">
+            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling4.jpg.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4>Horror</h4>
+              <p class="card-text">J. Rain</p>
+              <div class="d-flex">
+                <div class="col-8">
+                  <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </p>
+                  <p class="review">(<span>120</span>&nbsp;Review)</p>
+                </div>
+                <div class="col-4">
+                  <h3 class="h3price" style="color:red">$40</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-12 col-sm-6 col-md-1 mt-2" style="">
+            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling5.jpg.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4>Horror</h4>
+              <p class="card-text">J. Rain</p>
+              <div class="d-flex">
+                <div class="col-8">
+                  <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </p>
+                  <p class="review">(<span>120</span>&nbsp;Review)</p>
+                </div>
+                <div class="col-4">
+                  <h3 class="h3price" style="color:red">$40</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="pills-thriller" role="tabpanel" aria-labelledby="pills-thriller-tab">
+        <div class="d-flex flex-wrap justify-content-between">
+          <div class="card col-12 col-sm-6 col-md-1 mt-2" style="">
+            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling1.jpg.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4>Thriller</h4>
+              <p class="card-text">J. Rain</p>
+              <div class="d-flex">
+                <div class="col-8">
+                  <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </p>
+                  <p class="review">(<span>120</span>&nbsp;Review)</p>
+                </div>
+                <div class="col-4">
+                  <h3 class="h3price" style="color:red">$40</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-12 col-sm-6 col-md-1 mt-2" style="">
+            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling2.jpg.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4>Thriller</h4>
+              <p class="card-text">J. Rain</p>
+              <div class="d-flex">
+                <div class="col-8">
+                  <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </p>
+                  <p class="review">(<span>120</span>&nbsp;Review)</p>
+                </div>
+                <div class="col-4">
+                  <h3 class="h3price" style="color:red">$40</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-12 col-sm-6 col-md-1 mt-2" style="">
+            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling3.jpg.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4>Thriller</h4>
+              <p class="card-text">J. Rain</p>
+              <div class="d-flex">
+                <div class="col-8">
+                  <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </p>
+                  <p class="review">(<span>120</span>&nbsp;Review)</p>
+                </div>
+                <div class="col-4">
+                  <h3 class="h3price" style="color:red">$40</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-12 col-sm-6 col-md-1 mt-2" style="">
+            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling4.jpg.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4>Thriller</h4>
+              <p class="card-text">J. Rain</p>
+              <div class="d-flex">
+                <div class="col-8">
+                  <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </p>
+                  <p class="review">(<span>120</span>&nbsp;Review)</p>
+                </div>
+                <div class="col-4">
+                  <h3 class="h3price" style="color:red">$40</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-12 col-sm-6 col-md-1 mt-2" style="">
+            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling5.jpg.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4>Thriller</h4>
+              <p class="card-text">J. Rain</p>
+              <div class="d-flex">
+                <div class="col-8">
+                  <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </p>
+                  <p class="review">(<span>120</span>&nbsp;Review)</p>
+                </div>
+                <div class="col-4">
+                  <h3 class="h3price" style="color:red">$40</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-12 col-sm-6 col-md-1 mt-2" style="">
+            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling1.jpg.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4>Thriller</h4>
+              <p class="card-text">J. Rain</p>
+              <div class="d-flex">
+                <div class="col-8">
+                  <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </p>
+                  <p class="review">(<span>120</span>&nbsp;Review)</p>
+                </div>
+                <div class="col-4">
+                  <h3 class="h3price" style="color:red">$40</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="pills-scienceFiction" role="tabpanel" aria-labelledby="pills-scienceFiction-tab">
+        <div class="d-flex flex-wrap justify-content-between">
+          <div class="card col-12 col-sm-6 col-md-1 mt-2" style="">
+            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling1.jpg.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4>Science Fiction</h4>
+              <p class="card-text">J. Rain</p>
+              <div class="d-flex">
+                <div class="col-8">
+                  <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </p>
+                  <p class="review">(<span>120</span>&nbsp;Review)</p>
+                </div>
+                <div class="col-4">
+                  <h3 class="h3price" style="color:red">$40</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-12 col-sm-6 col-md-1 mt-2" style="">
+            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling2.jpg.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4>Science Fiction</h4>
+              <p class="card-text">J. Rain</p>
+              <div class="d-flex">
+                <div class="col-8">
+                  <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </p>
+                  <p class="review">(<span>120</span>&nbsp;Review)</p>
+                </div>
+                <div class="col-4">
+                  <h3 class="h3price" style="color:red">$40</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-12 col-sm-6 col-md-1 mt-2" style="">
+            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling3.jpg.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4>Science Fiction</h4>
+              <p class="card-text">J. Rain</p>
+              <div class="d-flex">
+                <div class="col-8">
+                  <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </p>
+                  <p class="review">(<span>120</span>&nbsp;Review)</p>
+                </div>
+                <div class="col-4">
+                  <h3 class="h3price" style="color:red">$40</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-12 col-sm-6 col-md-1 mt-2" style="">
+            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling4.jpg.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4>Science Fiction</h4>
+              <p class="card-text">J. Rain</p>
+              <div class="d-flex">
+                <div class="col-8">
+                  <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </p>
+                  <p class="review">(<span>120</span>&nbsp;Review)</p>
+                </div>
+                <div class="col-4">
+                  <h3 class="h3price" style="color:red">$40</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-12 col-sm-6 col-md-1 mt-2" style="">
+            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling5.jpg.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4>Science Fiction</h4>
+              <p class="card-text">J. Rain</p>
+              <div class="d-flex">
+                <div class="col-8">
+                  <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </p>
+                  <p class="review">(<span>120</span>&nbsp;Review)</p>
+                </div>
+                <div class="col-4">
+                  <h3 class="h3price" style="color:red">$40</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-12 col-sm-6 col-md-1 mt-2" style="">
+            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling1.jpg.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4>Science Fiction</h4>
+              <p class="card-text">J. Rain</p>
+              <div class="d-flex">
+                <div class="col-8">
+                  <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </p>
+                  <p class="review">(<span>120</span>&nbsp;Review)</p>
+                </div>
+                <div class="col-4">
+                  <h3 class="h3price" style="color:red">$40</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="pills-history" role="tabpanel" aria-labelledby="pills-history-tab">
+        <div class="d-flex flex-wrap justify-content-between">
+          <div class="card col-12 col-sm-6 col-md-1 mt-2" style="">
+            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling1.jpg.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4>History</h4>
+              <p class="card-text">J. Rain</p>
+              <div class="d-flex">
+                <div class="col-8">
+                  <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </p>
+                  <p class="review">(<span>120</span>&nbsp;Review)</p>
+                </div>
+                <div class="col-4">
+                  <h3 class="h3price" style="color:red">$40</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-12 col-sm-6 col-md-1 mt-2" style="">
+            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling2.jpg.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4>History</h4>
+              <p class="card-text">J. Rain</p>
+              <div class="d-flex">
+                <div class="col-8">
+                  <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </p>
+                  <p class="review">(<span>120</span>&nbsp;Review)</p>
+                </div>
+                <div class="col-4">
+                  <h3 class="h3price" style="color:red">$40</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-12 col-sm-6 col-md-1 mt-2" style="">
+            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling3.jpg.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4>History</h4>
+              <p class="card-text">J. Rain</p>
+              <div class="d-flex">
+                <div class="col-8">
+                  <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </p>
+                  <p class="review">(<span>120</span>&nbsp;Review)</p>
+                </div>
+                <div class="col-4">
+                  <h3 class="h3price" style="color:red">$40</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-12 col-sm-6 col-md-1 mt-2" style="">
+            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling4.jpg.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4>History</h4>
+              <p class="card-text">J. Rain</p>
+              <div class="d-flex">
+                <div class="col-8">
+                  <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </p>
+                  <p class="review">(<span>120</span>&nbsp;Review)</p>
+                </div>
+                <div class="col-4">
+                  <h3 class="h3price" style="color:red">$40</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-12 col-sm-6 col-md-1 mt-2" style="">
+            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling5.jpg.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4>History</h4>
+              <p class="card-text">J. Rain</p>
+              <div class="d-flex">
+                <div class="col-8">
+                  <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </p>
+                  <p class="review">(<span>120</span>&nbsp;Review)</p>
+                </div>
+                <div class="col-4">
+                  <h3 class="h3price" style="color:red">$40</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-12 col-sm-6 col-md-1 mt-2" style="">
+            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling1.jpg.webp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4>History</h4>
+              <p class="card-text">J. Rain</p>
+              <div class="d-flex">
+                <div class="col-8">
+                  <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </p>
+                  <p class="review">(<span>120</span>&nbsp;Review)</p>
+                </div>
+                <div class="col-4">
+                  <h3 class="h3price" style="color:red">$40</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- browse more btn -->
+    <div class="d-flex justify-content-center">
+      <button type="button" class="btn btn-outline-danger rounded-pill py-3 px-4 mt-5">Browse More</button>
+    </div>
+
+    <!-- grid templates -->
+    <div class="d-flex  justify-content-md-between flex-wrap ">
+      <div class="col-12 col-md-6 col-lg-6 mt-5 cardbody">
+        <img width="98%" src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/wants-bg1.jpg.webp" alt="image Not Available">
+        <div class="cardbody--absolute d-flex justify-content-between">
+          <div class="col-7 d-flex justify-content-center align-items-center p-5">
+            <h3 class="b-font text-white">The History of Phipino</h3>
+          </div>
+          <div class="col-5 d-flex justify-content-center align-items-center">
+            <button class="btn btn-danger rounded-pill px-4 py-2 fw-semibold ">View Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-6 mt-5 cardbody d-flex justify-content-md-end justify-content-lg-end">
+        <img width="98%" src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/wants-bg2.jpg.webp" alt="image Not Available">
+        <div class="cardbody--absolute d-flex justify-content-between">
+          <div class="col-7 d-flex justify-content-center align-items-center p-3">
+            <h3 class="b-font text-white">Wilma Mumduya</h3>
+          </div>
+          <div class="col-5 d-flex justify-content-center align-items-center">
+            <button class="btn btn-danger rounded-pill px-4 py-2 fw-semibold">View Details</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- grid template 2 -->
+    <div class="col-12 d-flex flex-column justify-content-center align-items-center text-white bgdot mt-5">
+      <h2 class="b-font m-1 mt-5">Join Newsletter</h2>
+      <p class="m-1 col-6 text-center fw-light mt-3 lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Nesciunt, asperiores optio! Maiores distinctio esse accusamus sapiente eveniet!</p>
+      <div class="d-flex mb-5 mt-3">
+        <input type="email" class="rounded-pill form-control m-2 px-3 py-3" placeholder="Enter Your Email">
+        <button class="btn btn-danger rounded-pill m-2 px-3 py-3 fw-semibold">Subscribe</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container-fluid container--footer">
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-muted">
+
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class=" mb-4">
+                <i class="fas fa-gem me-3"></i>
+                <a class="navbar-brand" style="color: rgb(67, 65, 65);" href="#">
+                  <img src="book.png" style="width: 50px;">
+                  <span class="navbar-brand__boldspan ">&nbsp;ABC</span> Book</a>
+              </h6>
+              <p>
+                Get the breathing space now, and we’ll extend your term at the other end year for go.
+              </p>
+              <div class="d-flex justify-content-between col-12">
+                <button class="btn btn-outline-secondary rounded-circle"><i class="bi bi-facebook"></i></button>
+                <button class="btn btn-outline-secondary rounded-circle"><i class="bi bi-instagram"></i></button>
+                <button class="btn btn-outline-secondary rounded-circle"><i class="bi bi-linkedin"></i></button>
+                <button class="btn btn-outline-secondary rounded-circle"><i class="bi bi-youtube"></i></button>
+              </div>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4 " style="color: rgb(67, 65, 65);">
+                Book Categories
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Angular</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">React</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Vue</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Laravel</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Pricing</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Settings</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Orders</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Help</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4" style="color: rgb(67, 65, 65);">Site Map</h6>
+              <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                jai@cedcoss.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+              <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div class="text-center p-2  mt-5" style="color: rgb(67, 65, 65);">
+        Copyright ©2022 : All rights reserved | This template is made with <i class="bi bi-heart-fill"></i> by
+        <a class="text-reset fw-bold" href="#">jai verma</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </div>
+</body>
+
+</html>
