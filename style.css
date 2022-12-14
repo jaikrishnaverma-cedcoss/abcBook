@@ -1,46 +1,52 @@
-.w100{
+.w100 {
     width: 100%;
 }
-.collapse__searchinput{
+
+.collapse__searchinput {
     max-width: 100%;
     border-radius: 30px;
     font-size: 18px;
     padding: 9px 45px 9px 20px;
 }
-.collapse__searchbox{
+
+.collapse__searchbox {
     display: flex;
     align-items: center;
     position: relative;
     min-width: 42%;
 }
-.searchicon{
-position: absolute;
-color: red;
-font-weight: 900;
-font-size: 22px;
-right: 27px;
-}
-.btnred{
-background-color: red;
-border-radius: 30px;
-padding: 10px;
-padding: 1% 3%;
-font-weight: 600;
+
+.searchicon {
+    position: absolute;
+    color: red;
+    font-weight: 900;
+    font-size: 22px;
+    right: 27px;
 }
 
-.navbar-brand__boldspan{
-font-weight: 700;
+.btnred {
+    background-color: red;
+    border-radius: 30px;
+    padding: 10px;
+    padding: 1% 3%;
+    font-weight: 600;
 }
 
-.container-fluid{
+.navbar-brand__boldspan {
+    font-weight: 700;
+}
+
+.container-fluid {
     padding: .1% 8%;
 }
-.carticon{
-font-size: 35px;
-margin: 0 20px;
-position: relative;
+
+.carticon {
+    font-size: 35px;
+    margin: 0 20px;
+    position: relative;
 }
-.cartitems{
+
+.cartitems {
 
     font-style: initial;
     height: 25px;
@@ -57,41 +63,49 @@ position: relative;
     right: -3px;
     font-weight: 900;
 }
-.container--second{
+
+.container--second {
     background-color: #fef4f4;
 }
-.jumbotron{
-     color: white;
-     background-size: cover;
-     display: flex;
-     flex-direction: column;
-     justify-content: center; 
-     align-items: center;
+
+.jumbotron {
+    color: white;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.jumbotron--first{
+
+.jumbotron--first {
     background-image: url('h1_hero3.jpg.webp');
-     min-height: 500px;
+    min-height: 500px;
 }
-.jumbotron--first h1,.b-font{
+
+.jumbotron--first h1,
+.b-font {
     font-family: 'Abril Fatface';
     letter-spacing: 2px;
 }
 
 
 
-.storebtn{
+.storebtn {
     min-width: 145px;
     padding: 8%;
     margin: 25px;
 }
-.container--second{
-background-color: #fef4f4;;
+
+.container--second {
+    background-color: #fef4f4;
+    ;
 }
 
-.navlinks{
+.navlinks {
     margin: .8% 5%;
 }
-.navlinks a{
+
+.navlinks a {
     font-weight: 900;
     color: rgb(30, 28, 28);
 }
@@ -99,93 +113,117 @@ background-color: #fef4f4;;
 li.nav-item {
     margin: 0px 7px;
 }
-.scifi{
-border-radius: 30px;
-margin:1% 0%;
-margin-top: 5%;
+
+.scifi {
+    border-radius: 30px;
+    margin: 1% 0%;
+    margin-top: 5%;
 }
-.jumbotron--second{
+
+.jumbotron--second {
     color: rgb(28, 26, 26);
     margin-bottom: 10%;
 }
 
-.jumbotron--second h2{
+.jumbotron--second h2 {
     font-family: 'Abril Fatface';
     margin: 8% 1% 4% 1%;
 }
 
-.cards-prev{
+.cards-prev {
     left: -45px;
     width: 4%;
 }
-.cards-next{
+
+.cards-next {
     right: -45px;
     width: 4%;
 }
-.carousel-control-prev-icon,.carousel-control-next-icon{
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
     font-weight: 900;
     filter: invert(1);
 }
-.card,.card *{
+
+.card,
+.card * {
     border-radius: 0px;
 }
-.card{
+
+.card {
     min-width: 11rem;
 }
-.card h4{
+
+.card h4 {
     font-family: 'Abril Fatface';
 }
-.card .card-text{
-color: rgb(103, 87, 87);
+
+.card .card-text {
+    color: rgb(103, 87, 87);
 }
-.card p i,.review span{
+
+.card p i,
+.review span {
     color: rgb(255, 72, 0);
 }
-.review{ 
- font-size: 12px;
- color: rgb(103, 87, 87);
+
+.review {
+    font-size: 12px;
+    color: rgb(103, 87, 87);
 }
-.card p,.review{
+
+.card p,
+.review {
     margin: 0;
 }
-.col--box1{
+
+.col--box1 {
     padding: 2%;
 }
-.col--details{
+
+.col--details {
     color: white;
 }
-.col--details h2{
+
+.col--details h2 {
     font-family: 'bootstrap-icons';
     font-size: 45px;
 }
-.vdetails{
+
+.vdetails {
     padding: 3%;
     border: 1.5px solid white;
 }
-.container--third{
+
+.container--third {
     margin: 9% 0%;
 }
-.banner{
+
+.banner {
     max-height: 470px;
 }
-.price{
+
+.price {
     font-size: 40px;
 }
-.h3price{
+
+.h3price {
     font-size: 1.5rem;
 }
 
-.cardbody{
+.cardbody {
     position: relative;
 }
-.cardbody--absolute{
-position: absolute;
-width: 98%;
-height: 100%;
-top: 0;
+
+.cardbody--absolute {
+    position: absolute;
+    width: 98%;
+    height: 100%;
+    top: 0;
 }
 
-.bgdot{
+.bgdot {
     background-image: url('https://preview.colorlib.com/theme/abcbook/assets/img/gallery/section-bg1.jpg.webp');
 }
 
@@ -194,26 +232,33 @@ top: 0;
     width: 20px;
     height: 20px;
 }
-.container--footer,footer{
-    background-color: #fef4f4 ;
+
+.container--footer,
+footer {
+    background-color: #fef4f4;
 }
+
 @media only screen and (max-width: 550px) {
 
-    .container-fluid{
+    .container-fluid {
         padding: 3%;
     }
+
     .cards-next {
         right: 3px;
         width: 4%;
     }
+
     .cards-prev {
         right: 3px;
         width: 4%;
     }
-    .banner{
+
+    .banner {
         width: 98%;
     }
-    .bookimg{
-     max-width:175px;
+
+    .bookimg {
+        max-width: 175px;
     }
 }
